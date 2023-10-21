@@ -1,0 +1,9 @@
+.HomeDrop_container{
+    position: fixed;
+    top: 30;
+    background: rgb(49, 49, 49);
+}
+.HomeDrop_container >ul >li{
+    list-style: none;
+}
+
