@@ -7,7 +7,6 @@ import HomeDrop from "./subcomponents/HomeDrop";
 const Navbar = () => {
     const [homedrop,setHomeDrop]=useState(false)
     const [storedrop,setStoreDrop]=useState(false)
-    const [livetvdrop,setLiveTvDrop]=useState(false)
     const [categoriesdrop,setCategoriesDrop]=useState(false)
   return (
     <div className="nav_Container">
@@ -20,8 +19,8 @@ const Navbar = () => {
         <li onMouseEnter={()=>{setStoreDrop(true)}} onMouseLeave={()=>setStoreDrop(false)}>
           Store {storedrop?<BsChevronUp   className="icon "/>:<BsChevronDown  className="icon " />} {" "}
         </li>
-        <li onMouseEnter={()=>{setLiveTvDrop(true)}} onMouseLeave={()=>setLiveTvDrop(false)}>
-          LiveTv {livetvdrop?<BsChevronUp className="icon " />:<BsChevronDown className="icon " />}{" "}
+        <li>
+          LiveTv 
         </li>
         <li onMouseEnter={()=>{setCategoriesDrop(true)}} onMouseLeave={()=>setCategoriesDrop(false)}>
           Categories {categoriesdrop?<BsChevronUp className="icon " />:<BsChevronDown className="icon " />}{" "}

@@ -1,9 +1,20 @@
 .HomeDrop_container{
-    position: fixed;
-    top: 30;
-    background: rgb(49, 49, 49);
+    position:fixed;
+    top: 2.8rem;
+    font-size: 1rem;
+    background-color: rgb(129, 129, 129);
+}
+.HomeDrop_container >ul{
+    background-color: rgb(129, 129, 129);
 }
 .HomeDrop_container >ul >li{
     list-style: none;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.HomeDrop_container >ul >li:hover{
+    background-color: gray;
+    color:white
 }
 
